@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Api", "WellWork.Api\WellWork.Api.csproj", "{069EC4B5-E6D5-4457-A879-E9A35ADB688E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Domain", "WellWork.Domain\WellWork.Domain.csproj", "{E9A94AD1-654F-47F9-B5AD-E0637FFF7B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Infrastructure", "WellWork.Infrastructure\WellWork.Infrastructure.csproj", "{A101D869-7415-4EE1-A752-579A5AC5DC15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{069EC4B5-E6D5-4457-A879-E9A35ADB688E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069EC4B5-E6D5-4457-A879-E9A35ADB688E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069EC4B5-E6D5-4457-A879-E9A35ADB688E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069EC4B5-E6D5-4457-A879-E9A35ADB688E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A94AD1-654F-47F9-B5AD-E0637FFF7B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A94AD1-654F-47F9-B5AD-E0637FFF7B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A94AD1-654F-47F9-B5AD-E0637FFF7B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A94AD1-654F-47F9-B5AD-E0637FFF7B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A101D869-7415-4EE1-A752-579A5AC5DC15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A101D869-7415-4EE1-A752-579A5AC5DC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A101D869-7415-4EE1-A752-579A5AC5DC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A101D869-7415-4EE1-A752-579A5AC5DC15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
