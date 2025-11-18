@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WellWork.Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("WellWork.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f684ed533c45cb8a6eaa53600e8d62958ac21d8")]
-[assembly: System.Reflection.AssemblyProductAttribute("WellWork.Domain")]
-[assembly: System.Reflection.AssemblyTitleAttribute("WellWork.Domain")]
+[assembly: System.Reflection.AssemblyProductAttribute("WellWork.Application")]
+[assembly: System.Reflection.AssemblyTitleAttribute("WellWork.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

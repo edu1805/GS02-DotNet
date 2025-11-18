@@ -30,12 +30,7 @@ public class UserMapping : IEntityTypeConfiguration<User>
             .HasColumnName("PASSWORD")
             .HasMaxLength(500)
             .IsRequired();
-
-        builder.Property(u => u.Role)
-            .HasColumnName("ROLE")
-            .HasMaxLength(50)
-            .IsRequired()
-            .HasDefaultValue("ROLE_USER");
+        
 
         // User 1 -> N CheckIns
         builder.HasMany(u => u.CheckIns)

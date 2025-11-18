@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Domain", "WellWork
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Infrastructure", "WellWork.Infrastructure\WellWork.Infrastructure.csproj", "{A101D869-7415-4EE1-A752-579A5AC5DC15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Application", "WellWork.Application\WellWork.Application.csproj", "{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A101D869-7415-4EE1-A752-579A5AC5DC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A101D869-7415-4EE1-A752-579A5AC5DC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A101D869-7415-4EE1-A752-579A5AC5DC15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
