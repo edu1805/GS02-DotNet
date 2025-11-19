@@ -31,12 +31,12 @@ public class GroqLLMService : ILLMService
             $"- Energia: {energy}\n" +
             $"- Observações: {notes}\n\n" +
             "Gere uma mensagem empática, curta (máximo 250 caracteres), motivacional e adequada ao estado emocional. " +
-            "Além disso, gere também um nível de confiança entre 0 e 1 baseado na clareza e assertividade do estado de humor/energia. " +
-            "Retorne APENAS um JSON no formato: {{\"message\":\"...\", \"confidence\":0.xx}}";
+            "Além disso, gere também um nível de confiança entre 0 e 1 baseado na clareza e assertividade do estado emocional. " +
+            "Retorne APENAS um JSON no formato: {\"message\":\"...\", \"confidence\":0.xx}";
 
         var body = new
         {
-            model = "llama3-70b-8192",
+            model = "llama-3.1-8b-instant",   // 🔥 Modelo suportado
             messages = new[]
             {
                 new { role = "user", content = prompt }
@@ -44,25 +44,37 @@ public class GroqLLMService : ILLMService
         };
 
         var json = JsonSerializer.Serialize(body);
+
         var response = await _httpClient.PostAsync(
             "https://api.groq.com/openai/v1/chat/completions",
             new StringContent(json, Encoding.UTF8, "application/json")
         );
 
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            var err = await response.Content.ReadAsStringAsync();
+            throw new Exception($"Erro ao chamar Groq API ({response.StatusCode}): {err}");
+        }
 
         var responseContent = await response.Content.ReadAsStringAsync();
+
         using var doc = JsonDocument.Parse(responseContent);
 
         var content = doc
             .RootElement.GetProperty("choices")[0]
             .GetProperty("message")
             .GetProperty("content")
-            .GetString()
-            ?? throw new Exception("IA retornou resposta vazia.");
+            .GetString();
 
+        if (content is null)
+            throw new Exception("IA retornou conteúdo vazio.");
+
+        // Agora o content é um JSON dentro da string retornada
         using var msgDoc = JsonDocument.Parse(content);
-        var message = msgDoc.RootElement.GetProperty("message").GetString()!;
+
+        var message = msgDoc.RootElement.GetProperty("message").GetString()
+            ?? throw new Exception("Campo 'message' não encontrado no JSON retornado.");
+
         var confidence = msgDoc.RootElement.GetProperty("confidence").GetDecimal();
 
         return new LLMResult(message, confidence);

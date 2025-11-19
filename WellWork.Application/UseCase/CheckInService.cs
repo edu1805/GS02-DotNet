@@ -85,4 +85,13 @@ public class CheckInService : ICheckInService
 
         return msg;
     }
+    
+    public async Task DeleteAsync(Guid id)
+    {
+        var checkIn = await _checkInRepo.GetByIdAsync(id);
+        if (checkIn == null)
+            throw new Exception("CheckIn não encontrado.");
+
+        await _checkInRepo.DeleteAsync(checkIn);
+    }
 }

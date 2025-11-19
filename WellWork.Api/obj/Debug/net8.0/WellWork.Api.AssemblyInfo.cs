@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WellWork.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f684ed533c45cb8a6eaa53600e8d62958ac21d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5121b6f621cd511948500975d0645c81f97e57c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("WellWork.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WellWork.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,5 +9,6 @@ public class GeneratedMessageMappingProfile : Profile
     public GeneratedMessageMappingProfile()
     {
         CreateMap<GeneratedMessage, GeneratedMessageDto>();
+        CreateMap<GeneratedMessage, GeneratedMessageResponseDto>();
     }
 }

@@ -24,18 +24,19 @@ public class CheckInRepository : ICheckInRepository
     public async Task AddAsync(CheckIn checkIn)
     {
         await _context.CheckIns.AddAsync(checkIn);
+        await _context.SaveChangesAsync();
     }
 
-    public Task UpdateAsync(CheckIn checkIn)
+    public async Task UpdateAsync(CheckIn checkIn)
     {
         _context.CheckIns.Update(checkIn);
-        return Task.CompletedTask;
+        await _context.SaveChangesAsync();
     }
 
-    public Task DeleteAsync(CheckIn checkIn)
+    public async Task DeleteAsync(CheckIn checkIn)
     {
         _context.CheckIns.Remove(checkIn);
-        return Task.CompletedTask;
+        await _context.SaveChangesAsync();
     }
 
     public async Task<(IEnumerable<CheckIn> Items, long TotalCount)>
@@ -48,7 +49,7 @@ public class CheckInRepository : ICheckInRepository
         var total = await query.CountAsync();
 
         var items = await query
-            .Skip(pageIndex * pageSize)
+            .Skip((pageIndex - 1) * pageSize)
             .Take(pageSize)
             .Include(c => c.GeneratedMessage)
             .ToListAsync();

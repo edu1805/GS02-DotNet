@@ -37,4 +37,14 @@ public class UserService : IUserService
 
     public async Task<(IEnumerable<User> Items, long TotalCount)> GetPagedAsync(int page, int pageSize)
         => await _userRepo.ListAsync(page, pageSize);
+    
+    public async Task DeleteUserAsync(Guid id)
+    {
+        var user = await _userRepo.GetByIdAsync(id);
+
+        if (user == null)
+            throw new Exception("Usuário não encontrado.");
+
+        await _userRepo.DeleteAsync(user);
+    }
 }

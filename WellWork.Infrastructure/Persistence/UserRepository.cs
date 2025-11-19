@@ -28,18 +28,19 @@ public class UserRepository : IUserRepository
     public async Task AddAsync(User user)
     {
         await _context.Users.AddAsync(user);
+        await _context.SaveChangesAsync();
     }
 
-    public Task UpdateAsync(User user)
+    public async  Task UpdateAsync(User user)
     {
         _context.Users.Update(user);
-        return Task.CompletedTask;
+        await _context.SaveChangesAsync();
     }
 
-    public Task DeleteAsync(User user)
+    public async Task DeleteAsync(User user)
     {
         _context.Users.Remove(user);
-        return Task.CompletedTask;
+        await _context.SaveChangesAsync();
     }
 
     public async Task<(IEnumerable<User> Items, long TotalCount)> ListAsync(int pageIndex, int pageSize)
@@ -50,7 +51,7 @@ public class UserRepository : IUserRepository
 
         var items = await query
             .OrderBy(u => u.Id)
-            .Skip(pageIndex * pageSize)
+            .Skip((pageIndex - 1) * pageSize)
             .Take(pageSize)
             .ToListAsync();
 

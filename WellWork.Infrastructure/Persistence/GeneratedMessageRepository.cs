@@ -30,6 +30,7 @@ public class GeneratedMessageRepository : IGeneratedMessageRepository
     public async Task AddAsync(GeneratedMessage message)
     {
         await _context.GeneratedMessages.AddAsync(message);
+        await _context.SaveChangesAsync();
     }
 
     public Task UpdateAsync(GeneratedMessage message)

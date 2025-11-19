@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WellWork.Api</name>
+    </assembly>
+    <members>
+        <member name="M:WellWork.Api.Controllers.CheckInsController.Create(WellWork.Application.DTOs.CheckInCreateDto)">
+             <summary>
+             Cria um novo Check-In para um usuário.
+             </summary>
+             <remarks>
+             ## 🔢 Valores possíveis
+            
+             ### 🎭 Mood (Humor)
+             * 0 = Feliz  
+             * 1 = Neutro  
+             * 2 = Cansado  
+             * 3 = Estressado  
+             * 4 = Ansioso  
+             * 5 = Triste  
+            
+             ### ⚡ EnergyLevel (Energia)
+             * 0 = Baixa  
+             * 1 = Média  
+             * 2 = Alta  
+            
+             ## 📥 Exemplo de requisição (JSON)
+             ```json
+             {
+               "userId": "c2b1f9f1-28e3-4a79-a3c7-8d8c99ef1234",
+               "mood": 0,
+               "energy": 1,
+               "notes": "Dia tranquilo, porém um pouco cansado."
+             }
+             ```
+             </remarks>
+        </member>
+        <member name="M:WellWork.Api.Controllers.CheckInsController.GetById(System.Guid)">
+            <summary>
+            Retorna um CheckIn específico pelo ID.
+            </summary>
+            <param name="id">ID do CheckIn desejado.</param>
+            <returns>O CheckIn encontrado ou 404 se não existir.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.CheckInsController.GetByUserId(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            Retorna todos os CheckIns de um usuário, com paginação opcional.
+            </summary>
+            <param name="userId">ID do usuário.</param>
+            <param name="page">Número da página (padrão: 1).</param>
+            <param name="pageSize">Quantidade de itens por página (padrão: 10).</param>
+            <returns>Lista paginada de CheckIns.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.CheckInsController.UpdateMood(System.Guid,WellWork.Domain.Enums.Mood)">
+            <summary>
+            Atualiza o humor registrado em um CheckIn.
+            </summary>
+            <param name="id">ID do CheckIn.</param>
+            <param name="mood">Novo humor.</param>
+            <returns>204 se atualizado com sucesso.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.CheckInsController.UpdateEnergy(System.Guid,WellWork.Domain.Enums.EnergyLevel)">
+            <summary>
+            Atualiza o nível de energia registrado em um CheckIn.
+            </summary>
+            <param name="id">ID do CheckIn.</param>
+            <param name="energy">Novo nível de energia.</param>
+            <returns>204 se atualizado com sucesso.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.CheckInsController.UpdateNotes(System.Guid,WellWork.Application.DTOs.CheckInUpdateNotesDto)">
+            <summary>
+            Atualiza as anotações de um CheckIn.
+            </summary>
+            <param name="id">ID do CheckIn.</param>
+            <param name="dto">Objeto contendo as novas anotações.</param>
+            <returns>204 se atualizado com sucesso.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.CheckInsController.GenerateMessage(System.Guid)">
+            <summary>
+            Gera uma mensagem personalizada com IA baseada nos dados do CheckIn.
+            </summary>
+            <param name="id">ID do CheckIn.</param>
+            <returns>Mensagem gerada com IA.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.CheckInsController.Delete(System.Guid)">
+            <summary>
+            Remove um CheckIn pelo ID.
+            </summary>
+            <param name="id">ID do CheckIn.</param>
+            <returns>204 se removido com sucesso.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.UsersController.Create(WellWork.Application.DTOs.UserCreateDto)">
+            <summary>
+            Cria um novo usuário no sistema.
+            </summary>
+            <param name="dto">Dados para criação do usuário.</param>
+            <returns>O usuário criado.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.UsersController.GetById(System.Guid)">
+            <summary>
+            Busca um usuário pelo seu ID.
+            </summary>
+            <param name="id">ID do usuário.</param>
+            <returns>O usuário encontrado ou 404 caso não exista.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.UsersController.GetByUsername(System.String)">
+            <summary>
+            Busca um usuário pelo username.
+            </summary>
+            <param name="username">Nome de usuário.</param>
+            <returns>O usuário correspondente ou 404 caso não exista.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.UsersController.UpdatePassword(System.Guid,WellWork.Application.DTOs.UserUpdatePasswordDto)">
+            <summary>
+            Atualiza a senha de um usuário.
+            </summary>
+            <param name="id">ID do usuário a ser atualizado.</param>
+            <param name="dto">Nova senha.</param>
+            <returns>Status 204 caso atualizado com sucesso.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.UsersController.GetPaged(System.Int32,System.Int32)">
+            <summary>
+            Lista usuários de forma paginada.
+            </summary>
+            <param name="page">Número da página (padrão: 1).</param>
+            <param name="pageSize">Quantidade por página (padrão: 10).</param>
+            <returns>Lista paginada de usuários.</returns>
+        </member>
+        <member name="M:WellWork.Api.Controllers.UsersController.Delete(System.Guid)">
+            <summary>
+            Remove um usuário pelo ID.
+            </summary>
+            <param name="id">ID do usuário a ser removido.</param>
+            <returns>Status 204 se removido com sucesso.</returns>
+        </member>
+    </members>
+</doc>

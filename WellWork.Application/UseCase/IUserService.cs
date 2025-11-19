@@ -11,4 +11,6 @@ public interface IUserService
     Task UpdatePasswordAsync(Guid userId, string newPasswordHash);
 
     Task<(IEnumerable<User> Items, long TotalCount)> GetPagedAsync(int page, int pageSize);
+    Task DeleteUserAsync(Guid id);
+
 }

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WellWork.Api.props" />
+</Project>

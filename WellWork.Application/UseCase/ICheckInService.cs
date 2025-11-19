@@ -13,6 +13,7 @@ public interface ICheckInService
     Task UpdateMoodAsync(Guid checkInId, Mood newMood);
     Task UpdateEnergyAsync(Guid checkInId, EnergyLevel newEnergy);
     Task UpdateNotesAsync(Guid checkInId, string? newNotes);
+    Task DeleteAsync(Guid id);
 
     /// <summary>
     /// Gera mensagem via LLM e salva GeneratedMessage associada

@@ -1,0 +1,12 @@
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\bin\Debug\net8.0\WellWork.Domain.deps.json
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\bin\Debug\net8.0\WellWork.Domain.dll
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\bin\Debug\net8.0\WellWork.Domain.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\WellWork.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\WellWork.Domain.AssemblyInfoInputs.cache
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\WellWork.Domain.AssemblyInfo.cs
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\WellWork.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\WellWork.Domain.sourcelink.json
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\WellWork.Domain.dll
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\refint\WellWork.Domain.dll
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\WellWork.Domain.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Domain\obj\Debug\net8.0\ref\WellWork.Domain.dll

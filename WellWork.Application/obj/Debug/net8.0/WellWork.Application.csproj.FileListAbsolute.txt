@@ -1,0 +1,16 @@
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\bin\Debug\net8.0\WellWork.Application.deps.json
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\bin\Debug\net8.0\WellWork.Application.dll
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\bin\Debug\net8.0\WellWork.Application.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\bin\Debug\net8.0\WellWork.Domain.dll
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\bin\Debug\net8.0\WellWork.Domain.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.Application.csproj.AssemblyReference.cache
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.Application.AssemblyInfoInputs.cache
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.Application.AssemblyInfo.cs
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.Application.csproj.CoreCompileInputs.cache
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.Application.sourcelink.json
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.8A2BD025.Up2Date
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.Application.dll
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\refint\WellWork.Application.dll
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\WellWork.Application.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\GS\dotnet\WellWork\WellWork.Application\obj\Debug\net8.0\ref\WellWork.Application.dll
