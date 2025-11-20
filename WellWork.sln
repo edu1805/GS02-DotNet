@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Application", "WellWork.Application\WellWork.Application.csproj", "{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellWork.Tests", "WellWork.Tests\WellWork.Tests.csproj", "{9E0ED094-CFC7-4BB5-999D-3B7B3C919A5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A84D58FD-F41C-44E3-8B97-0D0F54045AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0ED094-CFC7-4BB5-999D-3B7B3C919A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0ED094-CFC7-4BB5-999D-3B7B3C919A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0ED094-CFC7-4BB5-999D-3B7B3C919A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0ED094-CFC7-4BB5-999D-3B7B3C919A5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
